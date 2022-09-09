@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./triangulo_Esc.css">
+    <title>JS_curso_Practico</title>
+</head>
+<body>
+    <header>
+        <h1>Cuadrado</h1>
+        <p>Área y Perímetro</p>
+    </header>
+    <div class="contenedor">
+        <div class="figura">
+            <div class="container">                  
+                <div class="cuadrado" style="position: relative">
+                    <div class="lado_c1" style="position: absolute; left: -31px; top: 50px;"><p>Lado</p></div>
+                    <div class="lado_c" style="position: absolute; left: 136px; top: 50px;"><p>Lado</p></div>
+                    <div style="position: absolute; left: 55px; top: -41px;"><p>Lado</p></div>
+                    <div style="position: absolute; left: 55px; top: 96px;"><p>Lado</p></div>
+                </div>
+            </div>
+            <section class="operation" style="position: relative">
+                <div class="opcion1"><p>Ingresa los datos solicitados y calcula</p></div>
+                <div class="section1" style="position: relative">                        
+                    <div class="pcontenido">Lado 
+                        <form action="">
+                            <label for="Input_cuad"></label>
+                            <input id="Input_cuad" type="number">
+                        </form>
+                    </div>
+                    <div class="pcontenido">Unidades
+                        <form action="">
+                            <label for="unidades"></label>
+                                <input type="texto" multiple name="unidad_de_medida" id="unidades" list="medidas" required size="64">
+                                <datalist id="medidas">
+                                <option value="cm">cm</option>
+                                <option value="m">m</option>
+                                <option value="km">km</option>                    
+                                </datalist>
+                        </form>
+                    </div>
+                    <div class="pcontenidos">
+                        <form action="">
+                            <button type="button" id="calcular" onclick="calcularPerimetroCuadrado(), calcularAreaCuadrado()"><!--el type por defecto es submit (enviar)-->
+                                Calcular
+                            </button>
+                        </form>
+                    </div>    
+                </div>
+                <div class="section2" style="position: relative">
+                    <div class="area" style="position: relative">
+                        <div class="titulo"><p>Área</p></div><!--<sup>2</sup>-->
+                        <div class="contenido1">
+                            <div id="acuadrado" class="resultado"></div>                                
+                        </div>
+                    </div>
+                    <div class="perimetro" style="position: relative">
+                        <div class="titulo"><p>Perímetro</p></div>
+                        <div class="contenido2">
+                            <div id="pcuadrado" class="resultado"></div>                               
+                        </div>
+                    </div>
+                </div>
+                <div class="formulas">
+                    <p>Formulas:</p>
+                    <p>Área = Lado * Lado</p>
+                    <p>Perímetro = Lado * 4</p>
+                </div>
+            </section> 
+        </div>       
+        <div class="containers">
+            
+                
+                <div class="container">    
+                    <div class="triangulo" style="position: relative;">
+                        <div class="tri" style="position: absolute; left: -69px; top: -13px;"></div>
+                        <div class="lado1" style="position: absolute; left: -72px; top: 50px;"><p>Lado 1</p></div>
+                        <div class="lado2" style="position: absolute; left: 18px; top: 50px;"><p>Lado 2</p></div>
+                        <div class="base" style="position: absolute; left: -15px; top: 110px;"><p>Base</p></div>
+                    </div>                    
+                    <div class="text"><a href="./triangulo_Esc.html">Triangulo Escaleno</a></div>
+                </div>
+                <div class="container">
+                    <div class="triangulo" style="position: relative;">                    
+                        <div class="tri" style="position: absolute; left: -69px; top: -13px;"></div>                    
+                        <div class="lado1" style="position: absolute; left: -68px; top: 50px;"><p>Lado</p></div>
+                        <div class="lado2" style="position: absolute; left: 20px; top: 50px;"><p>Lado</p></div>
+                        <div class="lado3" style="position: absolute; left: 3px; top: 80px;"><p>Altura</p></div>
+                        <div class="base" style="position: absolute; left: -55px; top: 110px;"><p>Base</p></div>
+                        <div class="linea" style="position: absolute; right: -71px; top: 69px;">
+                            <hr width="140vh" color="white">
+                        </div>
+                        <div class="angulo" style="position: absolute; right: -12px; top: 135px;"></div>
+                        
+                    </div>                    
+                    <div class="text"><a href="./triangulo_Iso.html">Triangulo Isoceles</a></div>
+      
+                </div>
+                <div class="container" >
+                    <div class="circulo" style="position: relative;">
+                        <div style="position: absolute; right: 0px; top: 65px;">
+                            <hr width="70" color="white">
+                        </div>                    
+                        <div class="centro" style="position: absolute; right: 60px; top: 67px;"></div>
+                        <div class="radio" style="position: absolute; right: 30px; top: 32px;"><p>r</p></div>
+                    </div>                    
+                    <div class="text"><a href="./circulo.html">Circulo</a></div>
+    
+                </div>
+    
+            
+            </div>
+            <div>
+                <div class="botton_volver" >
+                    <div class="circul0" style="position: relative">
+                        <div class="circul0_centro" style="position: relative">
+                            <div class="circul0_arriba" style="position: relative">
+                                <div class="flecha" style="position: relative">
+                                    <div class="text">
+                                        <a href="./figuras.html"><img src="https://i.imgur.com/7TPPKa6.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="./figuras.js"></script>
+</body>
+</html>
+
+

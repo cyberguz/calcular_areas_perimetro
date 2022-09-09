@@ -9,292 +9,79 @@
 </head>
 <body>
     <header>
-        <h1>Perimetros y Areas</h1>
+        <h1>Areas y Perimetros</h1>
         <p>Elige el poligono que deseas</p>
     </header>
-    <div>       
+    <div class="contenedor">       
         <div class="containers">
             <div class="container">
-                <div class="cuadrado" style="position: relative">
-                    <div class="lado_c1" style="position: absolute; left: -31px; top: 50px;"><p>Lado</p></div>
-                    <div class="lado_c" style="position: absolute; left: 136px; top: 50px;"><p>Lado</p></div>
-                    <div style="position: absolute; left: 55px; top: -41px;"><p>Lado</p></div>
-                    <div style="position: absolute; left: 55px; top: 96px;"><p>Lado</p></div>
-                </div>
-                <div class="text"><p>Cuadrado</p></div>       
-                <section class="operation" style="position: relative">
-                    <div class="opcion1"><p>Ingresa los datos solicitados y calcula</p></div>
-                    <div class="section1" style="position: relative">                        
-                        <div class="pcontenido">Lado 
-                            <form action="">
-                                <label for="Input_cuad"></label>
-                                <input id="Input_cuad" type="number">
-                            </form>
-                        </div>
-                        <div class="pcontenido">Unidades
-                            <form action="">
-                                <label for="unidades"></label>
-                                    <input type="texto" multiple name="unidad_de_medida" id="unidades" list="medidas" required size="64">
-                                    <datalist id="medidas">
-                                    <option value="cm">cm</option>
-                                    <option value="m">m</option>
-                                    <option value="km">km</option>                    
-                                    </datalist>
-                            </form>
-                        </div>
-                        <div class="pcontenidos">
-                            <form action="">
-                                <button type="button" id="calcular" onclick="calcularPerimetroCuadrado(), calcularAreaCuadrado()"><!--el type por defecto es submit (enviar)-->
-                                    Calcular
-                                </button>
-                            </form>
-                        </div>    
+                    <div class="cuadrado" style="position: relative">
+                        <div class="lado_c1" style="position: absolute; left: -31px; top: 50px;"><p>Lado</p></div>
+                        <div class="lado_c" style="position: absolute; left: 136px; top: 50px;"><p>Lado</p></div>
+                        <div style="position: absolute; left: 55px; top: -41px;"><p>Lado</p></div>
+                        <div style="position: absolute; left: 55px; top: 96px;"><p>Lado</p></div>
                     </div>
-                    <div class="section2" style="position: relative">
-                        <div class="area" style="position: relative">
-                            <div class="titulo"><p>Área</p></div><!--<sup>2</sup>-->
-                            <div class="contenido1">
-                                <div id="acuadrado" class="resultado"></div>                                
-                            </div>
-                        </div>
-                        <div class="perimetro" style="position: relative">
-                            <div class="titulo"><p>Perímetro</p></div>
-                            <div class="contenido2">
-                                <div id="pcuadrado" class="resultado"></div>                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formulas">
-                        <p>Formulas:</p>
-                        <p>Área = Lado * Lado</p>
-                        <p>Perímetro = Lado * 4</p>
-                    </div>
-                </section>         
-            </div>
+                    <div class="text"><a href="./cuadrado.html">Cuadrado</a></div>
             
-            <div class="container">
-                <div class="triangulo" style="position: relative;">
-                    <div class="tri" style="position: absolute; left: -69px; top: -13px;"></div>
-                    <div class="lado1" style="position: absolute; left: -72px; top: 50px;"><p>Lado 1</p></div>
-                    <div class="lado2" style="position: absolute; left: 18px; top: 50px;"><p>Lado 2</p></div>
-                    <div class="base" style="position: absolute; left: -15px; top: 110px;"><p>Base</p></div>
                 </div>
-                <div class="text"><p>Triangulo Escaleno</p></div>
-                <section class="operation" style="position: relative">
-                    <div class="opcion1"><p>Ingresa los datos solicitados y calcula</p></div>
-                    <div class="section3" >
-                        <div class="pcontenido_triang">Lado 1 
-                            <form action="">
-                                <label for="Input_triang_l1"></label>
-                                <input id="Input_triang_l1" type="number">
-                            </form>
-                        </div>
-                        <div class="pcontenido_triang">Lado 2 
-                            <form action="">
-                                <label for="Input_triang_l2"></label>
-                                <input id="Input_triang_l2" type="number">
-                            </form>
-                        </div>
-                        <div class="pcontenido_triang">Base 
-                            <form action="">
-                                <label for="Input_triang_base"></label>
-                                <input id="Input_triang_base" type="number">
-                            </form>
-                        </div>
-                        <div class="pcontenido_triang">Unidad
-                            <form action="">
-                                <label for="unidades_triang"></label>
-                                    <input type="texto" multiple name="unidad_de_medida" id="unidades_Triang" list="medidas" required size="64">
-                                    <datalist id="medidas">
-                                    <option value="cm">cm</option>
-                                    <option value="m">m</option>
-                                    <option value="km">km</option>                    
-                                    </datalist>
-                            </form>
-                        </div>
-                        <div class="pcontenidos_triang">
-                            <form action="">
-                                <button type="button" id="calcular" onclick="calcularPerimetroTriangulo(), calcularAreaTriangulo1(), calcularAlturaTriangulo1 ()"><!--el type por defecto es submit (enviar)-->
-                                    Calcular
-                                </button>
-                            </form>
-                        </div>    
-                    </div>
-                    <div class="section4">
-                        <div class="area">
-                            <div class="titulo"><p>Área</p></div>                            
-                            <div class="contenido1">
-                                <div id="atriangulo" class="resultado"></div>                                
-                            </div>
-                        </div>
-                        <div class="perimetro">
-                            <div class="titulo"><p>Perímetro</p></div>                            
-                            <div class="contenido2">
-                                <div id="ptriangulo" class="resultado"></div>                               
-                            </div>
-                        </div>
-                        <div class="altura">
-                            <div class="titulo"><p>Altura</p></div>                            
-                            <div class="contenido2">
-                                <div id="alturatriangulo" class="resultado"></div>                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formulas">
-                        <p>Formulas:</p>
-                        <p>Área = &#8730(S*(S-Lado1)(S-Lado2)(S-Base))</p>
-                        <p>Perímetro = Lado1 + Lado2 + Base</p>
-                        <p>S = Semiperimetro = Perimetro / 2</p>    
-                        <p>Altura = 2 * Área / Base</p>                    
-                    </div>
-                </section>  
-            </div>
-            <div class="container">
-                <div class="triangulo" style="position: relative;">                    
-                    <div class="tri" style="position: absolute; left: -69px; top: -13px;"></div>                    
-                    <div class="lado1" style="position: absolute; left: -68px; top: 50px;"><p>Lado</p></div>
-                    <div class="lado2" style="position: absolute; left: 20px; top: 50px;"><p>Lado</p></div>
-                    <div class="lado3" style="position: absolute; left: 3px; top: 80px;"><p>Altura</p></div>
-                    <div class="base" style="position: absolute; left: -55px; top: 110px;"><p>Base</p></div>
-                    <div class="linea" style="position: absolute; right: -71px; top: 69px;">
-                        <hr width="140vh" color="white">
-                    </div>
-                    <div class="angulo" style="position: absolute; right: -12px; top: 135px;"></div>
-                    
-                </div>
-                <div class="text"><p>Triangulo Isoceles</p></div>
-                <section class="operation" style="position: relative">
-                    <div class="opcion1"><p>Ingresa los datos solicitados y calcula</p></div>
-                    <div class="section3" >
-                        <div class="pcontenido_triang">Altura 
-                            <form action="">
-                                <label for="Input_Altura_Triang"></label>
-                                <input id="Input_Altura_Triang" type="number">
-                            </form>
-                        </div>
-                        
-                        <div class="pcontenido_triang">Base 
-                            <form action="">
-                                <label for="Input_Base_Triang"></label>
-                                <input id="Input_Base_Triang" type="number">
-                            </form>
-                        </div>
-                        <div class="pcontenido_triang">Unidad
-                            <form action="">
-                                <label for="unidades_triang"></label>
-                                    <input type="texto" multiple name="unidad_de_medida" id="unidades_Triang1" list="medidas" required size="64">
-                                    <datalist id="medidas">
-                                    <option value="cm">cm</option>
-                                    <option value="m">m</option>
-                                    <option value="km">km</option>                    
-                                    </datalist>
-                            </form>
-                        </div>
-                        <div class="pcontenidos_triang">
-                            <form action="">
-                                <button type="button" id="calcular" onclick="calcularPerimetroTriangulo2(), calcularAreaTriangulo2 (), calcularLadoTriangulo ()"><!--el type por defecto es submit (enviar)-->
-                                    Calcular
-                                </button>
-                            </form>
-                        </div>    
-                    </div>
-                    <div class="section4">
-                        <div class="area">
-                            <div class="titulo"><p>Área</p></div>                            
-                            <div class="contenido1">
-                                <div id="atriangulo1" class="resultado"></div>                                
-                            </div>
-                        </div>
-                        <div class="perimetro">
-                            <div class="titulo"><p>Perímetro</p></div>                          
-                            <div class="contenido2">
-                                <div id="ptriangulo1" class="resultado"></div>                               
-                            </div>
-                        </div>
-                        <div class="lado01">
-                            <div class="titulo"><p>Lado</p></div>                          
-                            <div class="contenido2">
-                                <div id="lado01" class="resultado"></div>                               
-                            </div>
-                        </div>
-                        <!--<div class="lado02">
-                            <div class="titulo"><p>Lado2</p></div>                          
-                            <div class="contenido2">
-                                <div id="lado02" class="resultado"></div>                               
-                            </div>
-                        </div>-->
-                    </div>
-                    <div class="formulas">
-                        <p>Formulas:</p>
-                        <p>Área = Base * Altura / 2</p>
-                        <p>Perímetro = Lado1 + Lado2 + Base</p>
-                        <p>Lado = &#8730[Altura <sup>2</sup>+(Base/2)<sup>2</sup>]</p>
-                                              
-                    </div>
-                </section>  
-            </div>
-            <div class="container" >
-                <div class="circulo" style="position: relative;">
-                    <div style="position: absolute; right: 0px; top: 65px;">
-                        <hr width="70" color="white">
+                
+                <div class="container">
+                    <div class="triangulo" style="position: relative;">
+                        <div class="tri" style="position: absolute; left: -69px; top: -13px;"></div>
+                        <div class="lado1" style="position: absolute; left: -72px; top: 50px;"><p>Lado 1</p></div>
+                        <div class="lado2" style="position: absolute; left: 18px; top: 50px;"><p>Lado 2</p></div>
+                        <div class="base" style="position: absolute; left: -15px; top: 110px;"><p>Base</p></div>
                     </div>                    
-                    <div class="centro" style="position: absolute; right: 60px; top: 67px;"></div>
-                    <div class="radio" style="position: absolute; right: 30px; top: 32px;"><p>r</p></div>
+                    <div class="text"><a href="./triangulo_Esc.html">Triangulo Escaleno</a></div>
+    
                 </div>
-                <div class="text"><p>Circulo</p></div>
-                <section class="operation" style="position: relative">
-                    <div class="opcion1"><p>Pi = &#928; = 3.141592</Pi></div>
-                    <div class="section1" style="position: relative">                        
-                        <div class="pcontenido">Radio 
-                            <form action="">
-                                <label for="Input_Circulo"></label>
-                                <input id="Input_Circulo" type="number">
-                            </form>
+                <div class="container">
+                    <div class="triangulo" style="position: relative;">                    
+                        <div class="tri" style="position: absolute; left: -69px; top: -13px;"></div>                    
+                        <div class="lado1" style="position: absolute; left: -68px; top: 50px;"><p>Lado</p></div>
+                        <div class="lado2" style="position: absolute; left: 20px; top: 50px;"><p>Lado</p></div>
+                        <div class="lado3" style="position: absolute; left: 3px; top: 80px;"><p>Altura</p></div>
+                        <div class="base" style="position: absolute; left: -55px; top: 110px;"><p>Base</p></div>
+                        <div class="linea" style="position: absolute; right: -71px; top: 69px;">
+                            <hr width="140vh" color="white">
                         </div>
-                        <div class="pcontenido">Unidades
-                            <form action="">
-                                <label for="unidades"></label>
-                                    <input type="texto" multiple name="unidad_de_medida" id="unidades_Circulo" list="medidas" required size="64">
-                                    <datalist id="medidas">
-                                    <option value="cm">cm</option>
-                                    <option value="m">m</option>
-                                    <option value="km">km</option>                    
-                                    </datalist>
-                            </form>
-                        </div>
-                        <div class="pcontenidos">
-                            <form action="">
-                                <button type="button" id="calcular" onclick="calcularPerimetroCirculo(), calcularAreaCirculo ()"><!--el type por defecto es submit (enviar)-->
-                                    Calcular
-                                </button>
-                            </form>
-                        </div>    
-                    </div>
-                    <div class="section2" style="position: relative">
-                        <div class="area" style="position: relative">
-                            <div class="titulo"><p>Área</p></div><!--<sup>2</sup>-->
-                            <div class="contenido1">
-                                <div id="acirculo" class="resultado"></div>                                
-                            </div>
-                        </div>
-                        <div class="perimetro" style="position: relative">
-                            <div class="titulo"><p>Perímetro</p></div>
-                            <div class="contenido2">
-                                <div id="pcirculo" class="resultado"></div>                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="formulas">
-                        <p>Formulas:</p>
-                        <p>Área = &#928; * r <sup>2</sup></p>
-                        <p>Perímetro = &#928; * 2r</p>
-                        <p>Diametro = 2r</p>
-                    </div>
-                </section> 
+                        <div class="angulo" style="position: absolute; right: -12px; top: 135px;"></div>
+                        
+                    </div>                    
+                    <div class="text"><a href="./triangulo_Iso.html">Triangulo Isoseles</a></div>
+      
+                </div>
+                <div class="container" >
+                    <div class="circulo" style="position: relative;">
+                        <div style="position: absolute; right: 0px; top: 65px;">
+                            <hr width="70" color="white">
+                        </div>                    
+                        <div class="centro" style="position: absolute; right: 60px; top: 67px;"></div>
+                        <div class="radio" style="position: absolute; right: 30px; top: 32px;"><p>r</p></div>
+                    </div>                    
+                    <div class="text"><a href="./circulo.html">Circulo</a></div>
+    
+                </div>
+    
+            
             </div>
-        </div>
+            <div>
+                <div class="botton_volver" >
+                    <div class="circul0" style="position: relative">
+                        <div class="circul0_centro" style="position: relative">
+                            <div class="circul0_arriba" style="position: relative">
+                                <div class="flecha" style="position: relative">
+                                    <div class="text">
+                                        <a href="./inicio.html"><img src="https://i.imgur.com/7TPPKa6.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
-    <script src="./figuras.js"></script>
+    
 </body>
 </html>
 
