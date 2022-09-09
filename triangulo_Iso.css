@@ -286,8 +286,7 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
     background: linear-gradient(to right, rgb(133, 4, 79), #3A0056);}
 .section2 {/*Cuadrado: div que contiene los resultados*/
     width: auto;
-    height: auto;
-    
+    height: auto;    
     display: flex;    
     justify-content: center;       
 }
@@ -315,9 +314,12 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
 }
 .contenido1, .contenido2 {/*cuadrado: contiene div de resultados de formulas*/
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
+    width: 100px;
+    height: auto;
+    margin: 0px 15px 10px 15px;
     
 }
 #pcuadrado, #ptriangulo, #ptriangulo1, #alturatriangulo, #lado01, #lado02 {
@@ -327,7 +329,7 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
     width: auto;
     height: 25px;
     /*border: 2px solid orange;*/
-    color: white;
+    color: rgb(243, 239, 21);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     margin-top: 0px;

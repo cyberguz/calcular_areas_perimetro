@@ -326,7 +326,7 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
     width: auto;
     height: 25px;
     /*border: 2px solid orange;*/
-    color: white;
+    color: rgb(243, 239, 21);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     margin-top: 0px;
@@ -355,7 +355,7 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 500;
-    margin-top: 0px;
+    
 }
 .section3 {
     background-color:  #57067c;
@@ -367,6 +367,7 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
     flex-wrap: wrap;
     border: 2px solid   #57067c;
     border-radius: 10px;
+    
 }
 .section4 {/*Triangulo: div que contiene los resultados*/
     width: auto;

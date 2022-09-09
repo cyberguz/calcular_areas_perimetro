@@ -47,14 +47,14 @@ function calcularPerimetroCuadrado () {
     const valor = input.value;
 
     const perimetro = perimetroCuadrado (valor);
-    pcuadrado.innerHTML = agregarSeparadorMiles(perimetro.toFixed(2))+" "+document.getElementById("unidades").value;
+    pcuadrado.innerHTML = "El perímetro es <br>"+agregarSeparadorMiles(perimetro.toFixed(2))+" "+document.getElementById("unidades").value;
 }
 function calcularAreaCuadrado () {
     const input = document.getElementById("Input_cuad");
     const valor = input.value;
 
     const area = areaCuadrado (valor);
-    acuadrado.innerHTML = agregarSeparadorMiles(area.toFixed(2))+" "+document.getElementById("unidades").value + "<sup>2</sup>";
+    acuadrado.innerHTML = "El área es <br>"+agregarSeparadorMiles(area.toFixed(2))+" "+document.getElementById("unidades").value + "<sup>2</sup>";
 }
 
 
@@ -68,7 +68,7 @@ function  calcularPerimetroTriangulo() {
     const value3 = Number(input3);
 
     const perimetroTri = perimetroTriangulo(value1, value2, value3); 
-    ptriangulo.innerHTML = agregarSeparadorMiles(perimetroTri.toFixed(2))+" "+document.getElementById("unidades_Triang").value; 
+    ptriangulo.innerHTML = "El perímetro es <br>"+agregarSeparadorMiles(perimetroTri.toFixed(2))+" "+document.getElementById("unidades_Triang").value; 
 }
 function calcularAreaTriangulo1 () {
     const input1 = document.getElementById("Input_triang_l1").value;
@@ -80,7 +80,7 @@ function calcularAreaTriangulo1 () {
     const s = ((value1+value2+value3)/2); 
 
     const areaTri = areaTriangulo1 (value1, value2, value3, s);
-    atriangulo.innerHTML = agregarSeparadorMiles(areaTri.toFixed(2))+" "+document.getElementById("unidades_Triang").value + "<sup>2</sup>";
+    atriangulo.innerHTML = "El área es <br>"+agregarSeparadorMiles(areaTri.toFixed(2))+" "+document.getElementById("unidades_Triang").value + "<sup>2</sup>";
 }
 function calcularAlturaTriangulo1 () {
     const input1 = document.getElementById("Input_triang_l1").value;
@@ -91,7 +91,7 @@ function calcularAlturaTriangulo1 () {
     const value3 = Number(input3);     
     const s = ((value1+value2+value3)/2); 
     const alturaTri = 2/value3 * areaTriangulo1 (value1, value2, value3, s);
-    alturatriangulo.innerHTML = agregarSeparadorMiles(alturaTri.toFixed(2))+" "+document.getElementById("unidades_Triang").value;
+    alturatriangulo.innerHTML = "La altura es <br>"+agregarSeparadorMiles(alturaTri.toFixed(2))+" "+document.getElementById("unidades_Triang").value;
 }
 
 //html para calcular area y perimetro de triangulo con base y Altura//
@@ -104,7 +104,7 @@ function  calcularPerimetroTriangulo2() {
     const value4 =  value3**(1/2);
     
     const perimetroTriIso = perimetroTrianguloIsoceles(value4, value2); 
-    ptriangulo1.innerHTML = agregarSeparadorMiles(perimetroTriIso.toFixed(2))+" "+document.getElementById("unidades_Triang1").value; 
+    ptriangulo1.innerHTML = "El perímetro es <br>"+agregarSeparadorMiles(perimetroTriIso.toFixed(2))+" "+document.getElementById("unidades_Triang1").value; 
 }
 function calcularAreaTriangulo2 () {
     const input1 = document.getElementById("Input_Altura_Triang").value;
@@ -113,7 +113,7 @@ function calcularAreaTriangulo2 () {
     const value2 = Number(input2);
 
     const areaTri = areaTriangulo (value2, value1);
-    atriangulo1.innerHTML = agregarSeparadorMiles(areaTri.toFixed(2))+" "+document.getElementById("unidades_Triang1").value + "<sup>2</sup>";
+    atriangulo1.innerHTML = "El área es <br>"+agregarSeparadorMiles(areaTri.toFixed(2))+" "+document.getElementById("unidades_Triang1").value + "<sup>2</sup>";
 }
 function calcularLadoTriangulo () {
     const input1 = document.getElementById("Input_Altura_Triang").value;
@@ -123,7 +123,7 @@ function calcularLadoTriangulo () {
 
     const value3 = (value1*value1) + (value2/2)*(value2/2);
     const lado = (value3 ** (1/2));
-    lado01.innerHTML = agregarSeparadorMiles(lado.toFixed(2))+" "+document.getElementById("unidades_Triang1").value;
+    lado01.innerHTML = "El lado es <br>"+agregarSeparadorMiles(lado.toFixed(2))+" "+document.getElementById("unidades_Triang1").value;
 }
 
 //html para calcular area y perimetro de circulo conociendo su radio//
@@ -133,14 +133,14 @@ function  calcularPerimetroCirculo() {
     
     
     const perimetro_Circulo = perimetroCirculo(value1); 
-    pcirculo.innerHTML = agregarSeparadorMiles(perimetro_Circulo.toFixed(2))+" "+document.getElementById("unidades_Circulo").value; 
+    pcirculo.innerHTML = "El perímetro es <br>"+agregarSeparadorMiles(perimetro_Circulo.toFixed(2))+" "+document.getElementById("unidades_Circulo").value; 
 }
 function calcularAreaCirculo () {
     const input1 = document.getElementById("Input_Circulo").value;
     const value1 = Number(input1);
     
     const area_Circulo = areaCirculo (value1);
-    acirculo.innerHTML = agregarSeparadorMiles(area_Circulo.toFixed(2))+" "+document.getElementById("unidades_Circulo").value + "<sup>2</sup>";
+    acirculo.innerHTML = "El área es <br>"+agregarSeparadorMiles(area_Circulo.toFixed(2))+" "+document.getElementById("unidades_Circulo").value + "<sup>2</sup>";
 }
 
 

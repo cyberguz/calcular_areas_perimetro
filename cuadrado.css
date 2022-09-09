@@ -292,7 +292,7 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
 }
 
 .area, .perimetro, .altura, .lado01, .lado02 {/*Cuadrado, triangulo: Div que contiene texto de area, perimetro y resultados*/
-    width: 85px;
+    width: auto;
     /*background-color: blue;*/
     height: auto;
     margin: 0px 1px 0px 1px;   
@@ -314,19 +314,21 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
 }
 .contenido1, .contenido2 {/*cuadrado: contiene div de resultados de formulas*/
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
+    width: 100px;
+    height: auto;
+    margin: 0px 10px 0px 10px;
 }
-#pcuadrado, #ptriangulo, #ptriangulo1, #alturatriangulo, #lado01, #lado02 {
-    margin-top: 5px;
+#acuadrado, #pcuadrado, #ptriangulo, #ptriangulo1, #alturatriangulo, #lado01, #lado02 {
+    margin: 5px 0px 0px 0px;    
 }
 .resultado {/*Cuadrado resultados de formulas*/
-    width: auto;
+    width: 300px;
     height: 25px;
     /*border: 2px solid orange;*/
-    color: white;
+    color: rgb(243, 239, 21);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     margin-top: 0px;
@@ -337,7 +339,7 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
     background-color: #4d066e;
     border-radius: 10px;
     width: autopx;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .formulas p {/*Triangulo: texto descripcion de formulas*/
     color: rgb(5, 201, 201);
@@ -350,7 +352,7 @@ header p {/*Sub titulo: Elige el poligono que deseas*/
 }
 
 .opcion1 p{/*Texto: Area, perimetro en todos los poligonos*/
-    color: rgb(134, 137, 139);
+    color: rgb(138, 139, 134);
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
