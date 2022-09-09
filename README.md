@@ -1,1 +1,1 @@
-# curso_practico_javascript
+# calcular_areas_perimetro
