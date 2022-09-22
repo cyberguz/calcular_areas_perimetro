@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./porcentajes.css">
+    <title>Calculando precio con descuento</title>
+</head>
+
+<body>
+    <header>
+        <div class="izquierda">
+            <img src="https://i.imgur.com/DUce8Xa.png" alt="logo_cyberguz">            
+        </div>
+        <div class="centro">
+            <h1>Electronics</h1>   
+        </div>
+        <div class="derecha">
+            <img src="https://i.imgur.com/xOdYZ8j.png" alt="carrito_compra_lleno">
+            <div class="circulo" id="contador" style="position: relative; left: -30px; top: -10px;">0</div>            
+        </div>
+             
+    </header>
+    <section class="container">
+        
+        <section class="section1">
+            <div class="titulo">
+                <p>Parlante JBL - 600W</p>               
+            </div>
+            <div class="imagen">
+                <img src="https://i.imgur.com/o7u2fFh.png" alt="parlante bluetooh">
+            </div>
+            <div class="precio">
+                <p id="moneda">S/</p>
+                <p id="valor">699</p>
+            </div>
+            <div class="descuentoPorcentual">
+                <div class="oferta">
+                    <div class="descuento">
+                        <p>Hoy <br>-20%</p>                    
+                    </div>
+                    <div class="button_descuento">
+                        <button id="button" type="button" onclick="aplicarDescuento ()">Aplicar descuento</button>                    
+                    </div>
+                </div>
+                
+                <div class="resultado">
+                    <div class="precio_Descuento"><p id="soles" ></p><p id="precio_Descuento"></p></div>
+                    <div class="carrito" id="carrito" style= "visibility: hidden" onclick="efectuarCompra()">
+                        <div id="puntero" href="">
+                            <img src="https://i.imgur.com/5H8G43w.png" alt="">
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+                <div class="cupones">
+                    <div class="textoCupones">
+                        <p>Obten un <font color="red">CUPON DE DESCUENTO</font> adicional</p>
+                    </div>
+                    <div class="tarjetas">
+                        <img id="visa" onclick="efectuarCupon()" src="https://i.imgur.com/uALbV3M.png" alt="visa">
+                        <img id="master" onclick="efectuarCupon1()" src="https://i.imgur.com/9NAyOkj.png" alt="master">
+                        <img id="diners" onclick="efectuarCupon2()" src="https://i.imgur.com/StvE4BJ.png" alt="diners">
+                    </div>
+                    <div class="descuentoCupones">
+                        <div class="oferta">
+                            <div class="descuento">
+                                <p id="cupon"></p>                    
+                            </div>
+                        </div>
+                        
+                        <div class="resultado">
+                            <div class="precio_Descuento_Final"><p id="precio_Descuento_Final"></p></div>
+                            <div class="carrito1" id="carrito1" onclick="efectuarCompra()">
+                                <div id="puntero1" href="">
+                                    <img src="https://i.imgur.com/5H8G43w.png" alt="">
+                                </div>                        
+                            </div>
+                        </div>                        
+                    </div>
+            </div>        
+        </section>    
+    </section>
+</body>
+<script src="./porcentajes.js"></script>
+</html>

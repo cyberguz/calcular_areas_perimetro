@@ -1,0 +1,309 @@
+body {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 17%, rgba(247,0,50,1) 84%);
+    margin: 0px;       
+    
+}
+header {    
+    /*background-color: #e20414;*/
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 70px;
+}
+.izquierda {
+    width: 90px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.izquierda img{
+    margin-top: -25px;    
+    width: 90px;
+    height: 60px;
+   
+}
+.centro{    
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7d304c7;
+    font-size: 20px;
+    text-shadow: 2px 2px #500101;
+}
+.derecha{    
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.derecha img{
+    width: 55px;
+    height: 45px;
+}
+.circulo {
+    height: 25px;
+    width: 25px;
+    background-color: #500101;
+    color: white;
+    font-weight: 500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.container {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+.section1 {
+    background-color: rgba(248, 244, 6, 0.3);
+    opacity: 1;
+    width: 31%;
+    min-width: 350px;
+    height: 530px;
+    border-radius: 10px;
+    /*border: solid 4px rgba(241, 179, 9, 0.801);*/
+    box-shadow: 2px 2px 12px rgb(0, 27, 18);
+    margin: 5px;
+    
+}
+.titulo, .precio{   
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;   
+    margin: -25px; 
+}
+.titulo{
+    color: rgba(78, 4, 4, 0.952);
+    margin: -25px;    
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;    
+}
+img {
+    width: 250px;
+    height: auto;          
+    /*border: solid 2px black;*/
+}
+/*#puntero, #puntero1{
+    cursor: default;
+}*/
+.descuentoPorcentual, .descuentoCupones { /*contiene descuento, boton descuento y precio descuento*/    
+    margin-top: -20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;    
+    
+}
+.descuentoPorcentual{
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgb(147, 168, 161);
+    width: auto;
+}
+.oferta{
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;    
+    min-width: 160px;
+}
+.resultado{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 5px 5px 5px;    
+    min-width: 170px;
+}
+.descuento, .button_descuento, .carrito, .carrito1 {    
+    display: flex;    
+    align-items: center;/*vertical*/
+    justify-content: center;/*horizontal*/    
+    font-family: Arial, Helvetica, sans-serif;    
+    margin: 0px 3px 0px 0px;
+    
+}
+.descuento p {
+    display: flex;    
+    text-align: center;    
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#button{
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: bisque;
+    background: linear-gradient(to right, rgb(247, 100, 3), #500101);    
+    border-radius: 10px;
+    border: none;
+    width: 85px;
+    height: 50px;   
+    margin-right: 2px;
+}
+.precio_Descuento, .precio_Descuento_Final {    
+    max-width: 200px;
+    min-width: 110px;
+    width: auto;
+    height: 40px;
+    color: rgba(78, 4, 4, 0.952);
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;    
+    display: flex;    
+}
+.precio_Descuento_Final{
+    margin-top: -10px;
+}
+#precio_Descuento_Final{
+    margin-top: 10px;
+}
+#soles {
+    width: 40px;
+    height: 25px;
+    margin-top: 11px;
+    
+}
+#precio_Descuento{       
+    width: 200px;
+    height: 25px;
+    margin-top: 11px;
+    
+}
+#valor, #moneda {    
+    color: rgba(78, 4, 4, 0.952);
+    text-decoration: none;
+}
+.carrito, .carrito1{    
+    width: 100px;
+    height: 50px; 
+    margin-left: 2px;
+    opacity: 0;
+}
+.carrito img, .carrito1 img{
+    width: 50px;
+    height: 40px; 
+    
+}
+.carrito1{
+    margin-top: -8px;
+}
+.carrito :hover, .carrito1 :hover{    
+    transform: scale(1.05); 
+    
+}
+
+.cupones{
+    display: flex;      
+    flex-direction: column;
+    align-items: center;/*vertical*/
+    justify-content: center;/*horizontal*/    
+    text-align: center;  
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgb(147, 168, 161);    
+}
+#cupon{
+    margin-top: 1px;
+}
+.textoCupones {
+    color: #500101;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: -15px;    
+}
+
+.tarjetas{
+    width: auto;
+    min-width: 320px;
+    border: solid 2px brown;
+    margin-top: -10px;
+    
+}
+#visa, #master, #diners {
+    width: 75px;
+    height: 40px;
+    margin: 10px 5px 5px 5px;    
+    padding: 5px 5px 5px 5px;
+    border: solid 2px rgb(182, 182, 182);
+    border-radius: 10px;
+    
+    
+}
+.tarjetas :hover{
+    background-color: white;
+    transform: scale(1.15);
+}
+
+.descuentoCupones{
+    margin-top: 1px;
+    width: 320px;
+    height: 40px;
+    
+}
+.descuento{    
+    width: 88px;
+    min-width: 80px;
+    height: 50px; 
+    color: rgb(216, 12, 12);    
+    text-shadow: 1px 1px black;
+    animation-name: uno;
+    animation-duration: 0.85s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;             
+    animation-delay: 0s;           
+    }
+    @keyframes uno {
+    0%{
+        transform: translateY(0px);      
+        opacity: 1;          
+    }
+    15% {
+        transform: translateY(0px);
+        opacity: 0.5;
+    }
+    30% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    45% {
+        transform: translateY(0px);
+        opacity: 0.5;
+    }
+    60%{
+        transform: translateY(0px);      
+        opacity: 1;          
+    }
+    75% {
+        transform: translateY(0px);
+        opacity: 0.5;
+    }
+    90% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 0.5;
+    }
+}
+
+
+
